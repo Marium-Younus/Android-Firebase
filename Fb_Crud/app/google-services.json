@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "196958481396",
+    "firebase_url": "https://dbfb-app-default-rtdb.firebaseio.com",
+    "project_id": "dbfb-app",
+    "storage_bucket": "dbfb-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196958481396:android:1a4a1845944c554e0967a1",
+        "android_client_info": {
+          "package_name": "com.example.fb_crud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj022tSSd6fbnNSpwcop9wd3Wa52pOkI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=cnx6c8zSsSQ&list=PLdRq0mbeEBmzaKvIbEX-n0VZwStsA0pv-&index=2
+
+//-------------------------------------------------------------Login
+gmail account
+
+id: aptechphp5@gmail.com
+password: aptech2330@M
+
+//-------------------------------------------------------------Firbase Database 
+
+https://firebase.google.com/
+https://console.firebase.google.com/
+//-------------------------------------------------------------------------RealTimeDatabase
+
+ProjectName  : Fb_Crud
+DatabaseName : dbfb app (FirebaseConsole)
+
+ProjectName  : TTS_FB
+DatabaseName : My FireBase (FirebaseConsole)
+
+
+//-------------------------------------------------------------------------Firestore Database
+
+ProjectName  : AppStore_FB
+DatabaseName : AppStoreFB (FirebaseConsole)
