@@ -1,6 +1,8 @@
 package com.example.tts_fb;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -94,6 +96,34 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
                 });
             }
         });
+
+        ///--------------------------- Delete operation
+        holder.btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.n.getContext());
+                builder.setTitle("Delete Work");
+                builder.setMessage("Are you want to delete this record?");
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //delete
+                        FirebaseDatabase.getInstance().getReference().child("teacher").
+                                child(getRef(position).getKey()).removeValue();
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //exist
+                        Toast.makeText(holder.n.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.show();
+            }
+        });
+
+
     }
 
     @NonNull
